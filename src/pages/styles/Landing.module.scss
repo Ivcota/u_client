@@ -1,0 +1,107 @@
+.landing-page {
+  background-color: grey;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-areas: "left right";
+
+  @media (max-width: 991.98px) {
+    & {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__left-side {
+    grid-area: left;
+    background-image: url("https://cdn.pixabay.com/photo/2020/05/29/15/31/lantern-5235537_960_720.jpg");
+    background-size: cover;
+  }
+
+  &__right-side {
+    grid-area: right;
+    background-color: black;
+    color: white;
+    padding: 0 1.5vw;
+    @media (max-width: 991.98px) {
+      & {
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media (max-max-width: 991.98px) {
+      & {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 8vh;
+    font-size: 50px;
+    margin-bottom: 1rem;
+
+    @media (max-width: 991.98px) {
+      & {
+        font-size: x-large;
+      }
+    }
+  }
+
+  &__action-holder {
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    gap: 0.3rem;
+  }
+  &__action-button {
+    background-color: white;
+    padding: 0.7rem 0.2rem;
+    border-radius: 30px;
+    transition: all;
+    transition-duration: 200ms;
+
+    &--primary {
+      background-color: var(--primary);
+      border: none;
+      outline: none;
+      color: white;
+
+      &:hover {
+        background-color: hsl(180, 100%, 60%);
+      }
+    }
+
+    &--outline {
+      background-color: rgba(0, 255, 255, 0);
+      border: var(--primary) solid 1px;
+      outline: none;
+      color: white;
+
+      &:hover {
+        background-color: hsl(180, 100%, 60%);
+      }
+    }
+  }
+
+  &__or-block {
+    display: flex;
+  }
+
+  &__our-hr {
+    transform: rotate(90deg);
+    color: hsl(0, 0%, 30%);
+  }
+
+  &__fine-print {
+    font-size: smaller;
+  }
+
+  &__subtitle {
+    font-size: medium;
+  }
+}
