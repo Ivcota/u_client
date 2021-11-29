@@ -90,6 +90,7 @@
 }
 
 .landing-page__action-button {
+  text-align: center;
   background-color: white;
   padding: 0.7rem 0.2rem;
   border-radius: 30px;
@@ -97,6 +98,7 @@
   transition: all;
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
+  border: none;
 }
 
 .landing-page__action-button--primary {

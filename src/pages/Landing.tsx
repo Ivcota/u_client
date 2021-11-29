@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./styles/Landing.module.css";
 
 const Landing = () => {
@@ -21,14 +22,15 @@ const Landing = () => {
             <p>or</p>
             <hr className={styles["landing-page__our-hr"]} />
           </div>
-          <button
+          <Link
+            to="/login"
             className={classNames(
               styles["landing-page__action-button"],
               styles["landing-page__action-button--primary"]
             )}
           >
             Login
-          </button>
+          </Link>
           <p className={styles["landing-page__fine-print"]}>
             By signing up, you agree to the Terms of Service and Privacy Policy,
             including Cookie Use.

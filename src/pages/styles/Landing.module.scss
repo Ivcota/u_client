@@ -59,11 +59,13 @@
     gap: 0.3rem;
   }
   &__action-button {
+    text-align: center;
     background-color: white;
     padding: 0.7rem 0.2rem;
     border-radius: 30px;
     transition: all;
     transition-duration: 200ms;
+    border: none;
 
     &--primary {
       background-color: var(--primary);
